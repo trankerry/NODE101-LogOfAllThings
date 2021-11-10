@@ -4,7 +4,7 @@ const app = express();
 
 app.use((req, res, next) => {
 // write your logging code here
-
+    let agent = req.headers['user-agent'].replace(",",'');
 });
 
 app.get('/', (req, res) => {
